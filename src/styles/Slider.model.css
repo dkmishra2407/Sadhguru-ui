@@ -1,0 +1,109 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text-overlay h1 {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 53px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: left;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+.text-overlay p {
+    line-height: 30px;
+    margin-top: 20px;
+    max-width: 800px;
+    text-align: left;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 1s;
+}
+
+@media (max-width: 1024px) {
+    .text-overlay h1 {
+        font-size: 32px;
+    }
+
+    .text-overlay p {
+        font-size: 14px;
+        margin-top: 10px;
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .text-overlay h1 {
+        font-size: 24px;
+    }
+
+    .text-overlay p {
+        font-size: 12px;
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay {
+        top: auto;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        padding: 15px;
+    }
+
+    .text-overlay h1 {
+        font-size: 18px;
+    }
+
+    .text-overlay p {
+        font-size: 12px;
+        display: none;
+    }
+}
+
+.background {
+    background-image: url('https://shtheme.com/demosd/metallex1/wp-content/uploads/2018/05/project_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+}
