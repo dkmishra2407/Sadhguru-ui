@@ -1,8 +1,5 @@
 import React from 'react'
 import Responsive from '../components/Slider'
-
-
-
 import AboutUs from '../components/Aboutus'
 import OurProducts from '../components/OurProducts'
 import ListOfMachinery from '../components/ListOfMachinery'

@@ -356,7 +356,7 @@ const Products = () => {
     {/* Looping through FinalData */}
     {FinalData.map((product) => (
       <div key={product.id}>
-        <h2 className="text-3xl font-bold mb-8 mt-6 text-center text-blue-800">{product.Heading}</h2>
+        <h2 className="text-3xl font-bold mb-8 mt-6 text-center text-blue-1000 mb-4 text-4xl tracking-tight font-extrabold text-center">{product.Heading}</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {product.data.map((product1) => (
             <div
