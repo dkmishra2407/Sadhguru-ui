@@ -45,7 +45,15 @@ const ContactUs = () => {
   };
 
   return (
+   <>
+    <div className="p-8 mx-auto " data-aos="fade-up">
+            <h1 className="text-3xl font-bold mb-4 text-center text-blue-600">Contact Us</h1>
+                <p className="text-lg mb-4">
+                Ready to bring your project to life? Get in touch with Swaraj Engineering today. Our team is here to discuss your needs, provide expert advice, and deliver customized iron fabrication solutions that are built to last.
+                </p>
+        </div>
     <div className="bg-gray-900">
+      
       <section className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-gray-900">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">Contact Us</h2>
         <form onSubmit={sendEmail} className="space-y-8">
@@ -144,6 +152,7 @@ const ContactUs = () => {
       </div>
       <MapComponent lat={lat} lng={lng} />
     </div>
+    </>
   );
 };
 

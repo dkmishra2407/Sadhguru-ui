@@ -62,8 +62,8 @@ const Footer = () => {
                                 Services
                             </p>
                             <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                                <a className="hover:opacity-75" href> 1on1 Coaching </a>
-                                <a className="hover:opacity-75" href> Company Review </a>
+                                <a className="hover:opacity-75" href='/aboutus#industrial-solutions'> Custom Fabrication</a>
+                                <a className="hover:opacity-75" href='/aboutus#industrial-solutions'> Industrial Solutions </a>
                                 <a className="hover:opacity-75" href> Accounts Review </a>
                                 <a className="hover:opacity-75" href> HR Consulting </a>
                                 <a className="hover:opacity-75" href> SEO Optimisation </a>
@@ -86,7 +86,7 @@ const Footer = () => {
                             <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                                 <a className="hover:opacity-75" href>  Plot No W-7, S Block Bhosari MIDC </a>
                                 <a className="hover:opacity-75" href>  9561001623 (Vinod Bhandari) </a>
-                                <a className="hover:opacity-75" href> swarajengineering1@gmail.comy </a>
+                                <a className="hover:opacity-75" href> swarajengineering1@gmail.com </a>
                                 {/* <a className="hover:opacity-75" href> Accessibility </a> */}
                             </nav>
                         </div>
