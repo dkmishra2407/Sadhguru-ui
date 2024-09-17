@@ -60,15 +60,7 @@ function Responsive1() {
                         src={slid1}
                         alt="Banner 1"
                         className="slide-image"
-                        style={{
-                            height: '100vh', 
-                            width: '100%',  // Added width to cover full width
-                            objectFit: 'cover', 
-                            marginTop: '1px',
-                            borderRadius: '16px',
-                            marginLeft:'30px',
-                            objectFit:'cover',
-                        }}
+                        
                     />
                   
                 </div>
@@ -109,15 +101,7 @@ function Responsive1() {
                         src={slid2}
                         alt="Banner 1"
                         className="slide-image"
-                        style={{
-                            height: '100vh', 
-                            width: '100%',  // Added width to cover full width
-                            objectFit: 'cover', 
-                            marginTop: '1px',
-                            borderRadius: '16px',
-                            marginLeft:'30px',
-                            objectFit:'cover',
-                        }}
+                        
                     />
                   
                 </div>
@@ -126,15 +110,7 @@ function Responsive1() {
                         src={slid3}
                         alt="Banner 1"
                         className="slide-image"
-                        style={{
-                            height: '100vh', 
-                            width: '100%',  // Added width to cover full width
-                            objectFit: 'cover', 
-                            marginTop: '1px',
-                            borderRadius: '16px',
-                            marginLeft:'30px',
-                            objectFit:'cover',
-                        }}
+                        
                     />
                   
                 </div>

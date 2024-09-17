@@ -67,8 +67,9 @@ const AboutUs = () => {
             <MachinerySpecification />
             <MachinerySpecificationM1TR />
             <MeasuringInstruments />
-            <OurClients/>
             <h1 className="text-3xl font-bold mb-8 mt-8 text-center text-blue-600">Meet Our Team</h1>
+            <Responsive1/>
+            <OurClients/>
             {/* <div className="slide">
             <img
                 src={slid1}
@@ -84,7 +85,6 @@ const AboutUs = () => {
                 }}
             />
         </div> */}
-        <Responsive1/>
         </div>
     );
 };

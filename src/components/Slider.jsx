@@ -8,6 +8,7 @@ import "../styles/Slider.model.css";
 import slid1 from '../assets/Slider/banner_img1.jpg'
 import slid2 from '../assets/Slider/banner_img2.jpg'
 import slid3 from '../assets/Slider/banner_img3.jpg'
+import slid4 from '../assets/Slider/banner_img4.jpg'
 
 function Responsive() {
     useEffect(() => {
@@ -108,6 +109,15 @@ function Responsive() {
                 <div className="slide">
                     <img
                         src={slid3}
+                        alt="Banner 1"
+                        className="slide-image"
+                        style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
+                    />
+                  
+                </div>
+                <div className="slide">
+                    <img
+                        src={slid4}
                         alt="Banner 1"
                         className="slide-image"
                         style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
