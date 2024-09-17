@@ -57,7 +57,7 @@ function Responsive() {
             <Slider {...settings}>
                 <div className="slide">
                     <img
-                        src={'https://66dd3e0090eba4a826bc6833--aquamarine-youtiao-cdba7b.netlify.app/assets/bg1-lzZVUczu.webp'}
+                        src={slid1}
                         alt="Banner 1"
                         className="slide-image"
                         style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
@@ -98,7 +98,7 @@ function Responsive() {
                 </div> */}
                   <div className="slide">
                     <img
-                        src={'https://66dd3e0090eba4a826bc6833--aquamarine-youtiao-cdba7b.netlify.app/assets/bg1-lzZVUczu.webp'}
+                        src={slid2}
                         alt="Banner 1"
                         className="slide-image"
                         style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
@@ -107,7 +107,7 @@ function Responsive() {
                 </div>
                 <div className="slide">
                     <img
-                        src={'https://66dd3e0090eba4a826bc6833--aquamarine-youtiao-cdba7b.netlify.app/assets/bg1-lzZVUczu.webp'}
+                        src={slid3}
                         alt="Banner 1"
                         className="slide-image"
                         style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}

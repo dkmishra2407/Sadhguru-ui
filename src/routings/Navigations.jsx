@@ -7,6 +7,7 @@ import AboutUs from '../pages/Aboutpage'
 import ContactUs from '../pages/Contact'
 import Products from '../pages/Products'
 import Career from '../pages/Career'
+import Teams from '../pages/Teams'
 const Navigation = () => {
   return (
     <div className='content'>
@@ -17,7 +18,7 @@ const Navigation = () => {
         <Route path='/contact' element={<ContactUs />} />
         <Route path='/products' element={<Products />} />
         <Route path='/career' element={<Career />} />
-
+        <Route path='/team' element={<Teams />} />
       </Routes>
     </div >
   )
