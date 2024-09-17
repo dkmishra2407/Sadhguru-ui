@@ -203,7 +203,7 @@ import image92 from '../assets/SS MIXING VESSEL/3cbf26f9-971b-4aca-8f1c-898b9f0d
 
 const FinalData = [
   { id: 1, Heading: "Aluminium fabrication and machining", data: productData1 },
-  { id: 2, Heading: "CAN, BARREL, MOUNTING PLATE, COLUMN PIPE", data: productData2 },
+  { id: 2, Heading: "Can, Barrel, Mounting Plate, Coloum Pipe", data: productData2 },
   { id: 3, Heading: "Challenging work", data: productData3 },
   { id: 4, Heading: "Column Pipes", data: productData4 },
   { id: 5, Heading: "D Casing_Discharge Head", data: productData5 },
@@ -212,7 +212,7 @@ const FinalData = [
   { id: 8, Heading: "Fabrication", data: productData8 },
   {
     id: 9,
-    Heading: "MOTOR STOOL",
+    Heading: "Motor Stool",
     data: [
       { id: 1, image: image50 },
       { id: 2, image: image51 },
@@ -220,7 +220,7 @@ const FinalData = [
   },
   {
     id: 10,
-    Heading: "PIPING",
+    Heading: "Piping",
     data: [
       { id: 1, image: image52 },
       { id: 2, image: image53 },
@@ -247,21 +247,21 @@ const FinalData = [
   },
   {
     id: 12,
-    Heading: "SS MIXING VESSEL",
+    Heading: "SS Mixing Vessle",
     data: [
       { id: 1, image: image92 },
     ],
   },
   {
     id: 13,
-    Heading: "SHAFT STORAGE CONTAINER",
+    Heading: "Shaft Storage Container",
     data: [
       { id: 1, image: image70 },
     ],
   },
   {
     id: 16,
-    Heading: "TURNINIG AND DRILLING",
+    Heading: "Turning And Drilling",
     data: [
       { id: 1, image: image82 },
       { id: 2, image: image83 },

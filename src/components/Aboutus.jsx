@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/logo.png'
 import ListOfMachinery from './ListOfMachinery'
+import Slider from 'react-slick'
 const Aboutus = () => {
     return (
 
@@ -21,8 +22,7 @@ const Aboutus = () => {
                                 We make you look
                                 <span className="my-1 inline-block border-b-8 border-g4 bg-white px-4 font-bold text-g4 animate__animated animate__flash">different</span>
                             </h2>
-                            <p className="text-base text-gray-700">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium doloremque it.</p>
+                            <p className="text-base text-gray-700">We look forward to partnering with you and turning your ideas into reality with the precision and quality that Swaraj Engineering is known for.</p>
                             <div className="mt-10 flex flex-col items-center md:flex-row">
                                 <a href="/aboutus" className="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-green-600 px-6 font-medium tracking-wide text-white shadow-md transition hover:bg-blue-800 focus:outline-none md:mr-4 md:mb-0 md:w-auto">
                                     View More</a>

@@ -8,6 +8,8 @@ import WorkingExperience from '../components/WorkingExperience';
 import MachinerySpecification from '../components/MachinerySpecification';
 import MachinerySpecificationM1TR from '../components/MachinerySpecificationM1TR';
 import MeasuringInstruments from '../components/MeasuringInstruments';
+import OurClients from './OurClients';
+import Responsive1 from '../components/AboutSlider';
 
 const AboutUs = () => {
 
@@ -65,6 +67,24 @@ const AboutUs = () => {
             <MachinerySpecification />
             <MachinerySpecificationM1TR />
             <MeasuringInstruments />
+            <OurClients/>
+            <h1 className="text-3xl font-bold mb-8 mt-8 text-center text-blue-600">Meet Our Team</h1>
+            {/* <div className="slide">
+            <img
+                src={slid1}
+                alt="Team Image"
+                className="slide-image"
+                style={{
+                    height: '90vh', 
+                    width: '95%',  // Added width to cover full width
+                    objectFit: 'cover', 
+                    marginTop: '1px',
+                    borderRadius: '16px',
+                    marginLeft:'30px'
+                }}
+            />
+        </div> */}
+        <Responsive1/>
         </div>
     );
 };
