@@ -4,7 +4,7 @@ const CareerComponent = () => {
   const jobOpenings = [
     {
       title: "QA/QC Engineer",
-      location: "Mumbai, India",
+      location: "Pune, India",
       description: "Responsible for quality assurance and control. Must have experience in the manufacturing industry.",
     },
     {

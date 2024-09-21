@@ -18,10 +18,11 @@ const Aboutus = () => {
 
                                 About Us
                             </p>
-                            <h2 className="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-g1 sm:text-7xl sm:leading-snug">
-                                We make you look
-                                <span className="my-1 inline-block border-b-8 border-g4 bg-white px-4 font-bold text-g4 animate__animated animate__flash">different</span>
-                            </h2>
+                            <h4 className="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-g1 sm:text-7xl sm:leading-snug" style={{ fontFamily: "Times New Roman, Times, serif" }}>
+    BUILDING THE <span className="my-1 inline-block border-b-8 border-g4 bg-white px-4 font-bold text-g4 animate__animated animate__flash">FUTURE</span> WITH 
+    <span className="my-1 inline-block border-b-8 border-g4 bg-white px-4 font-bold text-g4 animate__animated animate__flash">ENGINEERING</span>
+</h4>
+
                             <p className="text-base text-gray-700">We look forward to partnering with you and turning your ideas into reality with the precision and quality that Swaraj Engineering is known for.</p>
                             <div className="mt-10 flex flex-col items-center md:flex-row">
                                 <a href="/aboutus" className="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-green-600 px-6 font-medium tracking-wide text-white shadow-md transition hover:bg-blue-800 focus:outline-none md:mr-4 md:mb-0 md:w-auto">

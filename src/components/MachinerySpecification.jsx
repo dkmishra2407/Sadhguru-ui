@@ -30,10 +30,18 @@ const MachinerySpecification = () => {
                 <li data-aos="fade-right" data-aos-delay="500">Centre Height: 12”</li>
               </ul>
             </div>
+            <div>
+              <h3 className="text-lg font-semibold">3)</h3>
+              <ul className="list-disc list-inside space-y-2 text-lg">
+                <li data-aos="fade-right" data-aos-delay="300">Bed Size: 12 Feet</li>
+                <li data-aos="fade-right" data-aos-delay="400">Spindle Bore: 105</li>
+                <li data-aos="fade-right" data-aos-delay="500">Centre Height: 18”</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div>
-          <h2 className="text-xl font-semibold mb-2">OPERATIONS TO BE PERFORMED</h2>
+          {/* <h2 className="text-xl font-semibold mb-2">OPERATIONS TO BE PERFORMED</h2>
           <ul className="list-disc list-inside space-y-2 text-lg">
             <li data-aos="fade-right">Facing</li>
             <li data-aos="fade-right" data-aos-delay="100">Turning</li>
@@ -46,7 +54,7 @@ const MachinerySpecification = () => {
             <li data-aos="fade-right" data-aos-delay="800">Drilling</li>
             <li data-aos="fade-right" data-aos-delay="900">Boring</li>
             <li data-aos="fade-right" data-aos-delay="1000">Tapping</li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>

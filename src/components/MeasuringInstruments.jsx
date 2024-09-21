@@ -16,7 +16,7 @@ const MeasuringInstruments = () => {
             <tr>
               <th className="px-4 py-2">SR NO</th>
               <th className="px-4 py-2">INSTRUMENT DESCRIPTION</th>
-              <th className="px-4 py-2">WHETHER CALIBRATED OR NOT</th>
+              <th className="px-4 py-2">CALIBRATED FROM NABL LAB</th>
             </tr>
           </thead>
           <tbody>
@@ -27,7 +27,7 @@ const MeasuringInstruments = () => {
             </tr>
             <tr>
               <td className="border px-4 py-2">2</td>
-              <td className="border px-4 py-2">Outside Micrometer – 300 -500 mm</td>
+              <td className="border px-4 py-2">Outside Micrometer – 0 -500 mm</td>
               <td className="border px-4 py-2">Yes</td>
             </tr>
             <tr>
@@ -52,7 +52,7 @@ const MeasuringInstruments = () => {
             </tr>
             <tr>
               <td className="border px-4 py-2">7</td>
-              <td className="border px-4 py-2">Mechanical Vernier Caliper – 1000 mm 2000 mm</td>
+              <td className="border px-4 py-2">Mechanical Vernier Caliper – 1000 mm(DAIL VERNIER), 2000 mm</td>
               <td className="border px-4 py-2">Yes</td>
             </tr>
             <tr>
@@ -63,6 +63,11 @@ const MeasuringInstruments = () => {
             <tr>
               <td className="border px-4 py-2">9</td>
               <td className="border px-4 py-2">Pressure gauges</td>
+              <td className="border px-4 py-2">Yes</td>
+            </tr>
+            <tr>
+              <td className="border px-4 py-2">10</td>
+              <td className="border px-4 py-2">BRIDGE CAM GAUGE</td>
               <td className="border px-4 py-2">Yes</td>
             </tr>
           </tbody>

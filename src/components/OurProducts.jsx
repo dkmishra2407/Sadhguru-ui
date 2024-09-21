@@ -4,11 +4,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import right from '../assets/right.png';
 import left from '../assets/left.png';
-
+import image1 from '../assets/Images/image1.jpg'; 
+import image2 from '../assets/newaddedimage.jpg'
 const imageArray = [
   {
     title: "BAREL / CAN MANUFACTURING SIZE : 12 TO 48 MATERIAL : SA 516 GR 70, A106 GR B, A333 GR 6, SS316L, DUPLEX, SUPER DUPLEX",
-    img: 'https://i.ibb.co/hyLnRG6/SWARAJ2.jpg'
+    img: 'https://ibb.co/3vnjyK4.png'
   },
   {
     title: 'DISTRUBUTER CASING / DISCHAGE HEAD MATERIAL : SA 516 GR 70, SS 316L, DUPLEX, SUPER DUPLEX.',
@@ -33,6 +34,10 @@ const imageArray = [
   {
     title: 'MOUNTING PLATE THICKNESS RANGE : 56MM TO 110MM MATERIAL : SA 516 GR 70, SS 316L, DUPLEX, SUPER DUPLEX.',
     img: 'https://i.ibb.co/1d7pFkq/SWARAJ7.png'
+  },
+  {
+    title: 'MOUNTING PLATE THICKNESS RANGE : 56MM TO 110MM MATERIAL : SA 516 GR 70, SS 316L, DUPLEX, SUPER DUPLEX.',
+    img: image1
   }
 ];
 
@@ -102,7 +107,7 @@ const OurProducts = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Designed for tough industrial environments, our components are made from high-quality **SA516 Gr 70** and **IS 2062 E 25** steel. They offer exceptional durability, corrosion resistance, and the ability to withstand extreme pressures and temperatures. Rigorous quality checks, including heat treatment and advanced welding, ensure reliable and long-lasting performance. Ideal for critical applications, our products deliver industry-leading efficiency and reliability.
+          Designed for tough industrial environments, our components are made from high-quality SA 516 GR 70 and IS 2062 E 250A steel. They offer exceptional durability, corrosion resistance, and the ability to withstand extreme pressures and temperatures. Rigorous quality checks, including heat treatment and advanced welding, ensure reliable and long-lasting performance. Ideal for critical applications, our products deliver industry-leading efficiency and reliability.
         </p>
 
         <div className="flex justify-end gap-2 mt-4">

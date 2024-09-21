@@ -12,9 +12,10 @@ import image8 from '../assets/Images/image8.png';
 import image4 from '../assets/Images/image4.png';
 import image9 from '../assets/Images/image9.jpg';
 import image10 from '../assets/Images/image10.png';
+import image101 from '../assets/newadd1.jpg';
 const productData = [
   { id: 1, name: 'DISTRUBUTER CASING / DISCHAGE HEAD', material: 'SA 516 GR 70, SS 316L, DUPLEX, SUPER DUPLEX.', image: image1 },
-  { id: 2, name: 'BAREL / CAN', size: '12” TO 48”', material: 'SA 516 GR 70, A106 GR B, A333 GR 6, SS316L, DUPLEX, SUPER DUPLEX', image: image2 },
+  { id: 2, name: 'BAREL / CAN', size: '12” TO 48”', material: 'SA 516 GR 70, A106 GR B, A333 GR 6, SS316L, DUPLEX, SUPER DUPLEX', image: image101 },
   { id: 3, name: 'MOUNTING PLATE', thickness: '56MM TO 110MM', material: 'SA 516 GR 70, SS 316L, DUPLEX, SUPER DUPLEX.', image: image3 },
   { id: 5, name: 'MOTOR STOOL.', material: 'SA516 GR 70, IS 2062 E 250', image: image5 },
   { id: 6, name: 'MOTOR STOOL.', material: 'SA516 GR 70, IS 2062 E 250', image: image6 },
@@ -40,15 +41,17 @@ const productData1 = [
 // CAN, BARREL, MOUNTING PLATE, COLUMN PIPE
 import image15 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/5a623b95-cf5d-4ed6-bd88-77da73056fbb.jpeg';
 import image16 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/8eeb6c18-9b69-483c-8a05-edd44ee19de6.jpeg';
-import image17 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/48a12c99-479f-4732-bc91-aca0dcd39d3b.jpeg';
+import image17 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/newadded2.jpg';
 import image18 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/90c0772f-a192-415a-8662-d40918f8f961.jpeg';
 import image19 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/693b0d8b-3689-4c70-ab41-c4f03f57988a.jpeg';
-import image20 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/59567387-941d-4786-96f4-f853a73e8d50.jpeg';
+import image20 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/newadd15.jpg';
 import image21 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/b7dd9cde-2dc2-4de0-8592-cc2d7915f9b1.jpeg';
 import image22 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/c5c1946a-5c54-4830-ac86-43dfd336ea60.jpeg';
 import image23 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/dadd9450-16fe-4f03-984d-4a2d5b56a55f.jpeg';
 import image24 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/bef07e4b-17eb-4f14-9e04-ec6592f3f81f.jpeg';
-
+import image105 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/newadd16.jpg';
+import image106 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/newadd17.jpg';
+import image107 from '../assets/CAN, BARREL, MOUNTING PLATE, COLUMN PIPE/newadd18.jpg';
 const productData2 = [
   { id: 1, image: image15 },
   { id: 2, image: image16 },
@@ -59,14 +62,17 @@ const productData2 = [
   { id: 7, image: image21 },
   { id: 8, image: image22 },
   { id: 9, image: image23 },
-  { id: 10, image: image24 }
+  { id: 10, image: image24 },
+  { id: 11, image: image105 },
+  { id: 12, image: image106 },
+  { id: 12, image: image107 },
 ];
 
 // Challenging work
-import image25 from '../assets/Challenging work/41b6272b-1628-4e0e-b45a-d0f996e64579.jpeg';
-import image26 from '../assets/Challenging work/03925798-d8be-4166-8919-15ae59c39b1b.jpeg';
-import image27 from '../assets/Challenging work/cad88d8d-60d8-4171-b37b-4aa4301858b3.jpeg';
-import image28 from '../assets/Challenging work/f4a78297-f311-42ec-8bfa-cb1aa79bd393.jpeg';
+import image25 from '../assets/Challenging work/newadd3.jpg';
+import image26 from '../assets/Challenging work/newadd4.jpg';
+import image27 from '../assets/Challenging work/newadd5.jpg';
+import image28 from '../assets/Challenging work/newadd7.jpg';
 
 const productData3 = [
   { id: 1, image: image25 },
@@ -115,7 +121,7 @@ const productData6 = [
 ];
 
 // Driver Stand
-import image41 from '../assets/DRIVER STAND/49d9164b-1c74-4a60-a794-6eaa70dbc4a0.jpeg';
+import image41 from '../assets/DRIVER STAND/newadd8.jpg';
 import image42 from '../assets/DRIVER STAND/9323b2a0-604e-4b1f-b9ac-4fb3936b733c.jpeg';
 
 const productData7 = [
@@ -147,7 +153,7 @@ import image51 from '../assets/MOTOR STOOL/9953a87c-8ac2-4b81-82db-442ccfcd018c.
 
 // PIPING
 import image52 from '../assets/PIPING/010cdc94-02e5-46e1-bf47-aefae5dc993e.jpeg';
-import image53 from '../assets/PIPING/492aff63-e2c9-4a1d-a0e3-a8ebf79e1933.jpeg';
+import image53 from '../assets/PIPING/newadd9.jpg';
 import image54 from '../assets/PIPING/562d8310-44bd-4ed9-8f0a-4b160a540140.jpeg';
 import image55 from '../assets/PIPING/802e44c0-20ad-46d3-a75b-3f2fb4e6e043.jpeg';
 import image56 from '../assets/PIPING/87491884-8343-4b24-8b7b-06c9c747e052.jpeg';
@@ -170,8 +176,9 @@ import image68 from '../assets/Slider/banner_img2.jpg';
 import image69 from '../assets/Slider/banner_img3.jpg';
 
 // SHAFT STORAGE CONTAINER
-import image70 from '../assets/SHAFT STORAGE CONTAINER/5daed40f-2327-417b-8d4e-abf54dcddd3f.jpeg';
-
+import image70 from '../assets/SHAFT STORAGE CONTAINER/newadd11.jpg';
+import image102 from '../assets/SHAFT STORAGE CONTAINER/newadd12.jpg'
+import image103 from '../assets/SHAFT STORAGE CONTAINER/newadd13.jpg' 
 // Vessel
 import image71 from '../assets/Vessel/cec295ab-cc43-4ffe-ab69-1d7ad66be55d.jpeg';
 import image72 from '../assets/Vessel/cb9afa28-cf9a-4223-abd6-b8f2ab277e77.jpeg';
@@ -200,24 +207,35 @@ import image90 from '../assets/TURNINIG AND DRILLING/5547f1fe-5c86-4f06-9568-280
 import image91 from '../assets/TURNINIG AND DRILLING/12b38ee9-094e-48d7-b641-fba5e9684ff6.jpeg';
 
 import image92 from '../assets/SS MIXING VESSEL/3cbf26f9-971b-4aca-8f1c-898b9f0d1c7c.jpeg';
+import image111 from '../assets/PMI/newimage1.jpg';
+import image112 from '../assets/PMI/newimage2.jpg';
+import image113 from '../assets/PMI/newimage3.jpg';
+import image121 from '../assets/lpi/img1.jpg'
+
+import image131 from '../assets/HYDROPNEUMATIC INHOUSE FACILITY/i1.jpg'
+import image132 from '../assets/HYDROPNEUMATIC INHOUSE FACILITY/i1.jpg'
+
+import image141 from '../assets/MPI TESTING/IMG-20240920-WA0032.jpg'
+import image142 from '../assets/MPI TESTING/IMG-20240920-WA0033.jpg'
+import image143 from '../assets/MPI TESTING/IMG-20240920-WA0034.jpg'
+import image144 from '../assets/MPI TESTING/IMG-20240920-WA0035.jpg'
 
 const FinalData = [
-  { id: 1, Heading: "Aluminium fabrication and machining", data: productData1 },
-  { id: 2, Heading: "Can, Barrel, Mounting Plate, Coloum Pipe", data: productData2 },
+  { id: 2, Heading: "Can, Barrel, Mounting Plate, Column Pipe", data: productData2 },
   { id: 3, Heading: "Challenging work", data: productData3 },
   { id: 4, Heading: "Column Pipes", data: productData4 },
-  { id: 5, Heading: "D Casing_Discharge Head", data: productData5 },
+  { id: 5, Heading: "Distributer Casing & Discharge Head", data: productData5 },
   { id: 6, Heading: "Distance Piece", data: productData6 },
   { id: 7, Heading: "Driver Stand", data: productData7 },
-  { id: 8, Heading: "Fabrication", data: productData8 },
-  {
-    id: 9,
-    Heading: "Motor Stool",
-    data: [
-      { id: 1, image: image50 },
-      { id: 2, image: image51 },
-    ],
-  },
+  // { id: 8, Heading: "Fabrication", data: productData8 },
+  // {
+  //   id: 9,
+  //   Heading: "Motor Stool",
+  //   data: [
+  //     { id: 1, image: image50 },
+  //     { id: 2, image: image51 },
+  //   ],
+  // },
   {
     id: 10,
     Heading: "Piping",
@@ -233,18 +251,18 @@ const FinalData = [
       { id: 9, image: image60 },
     ],
   },
-  {
-    id: 11,
-    Heading: "Piping Fabrication",
-    data: [
-      { id: 1, image: image61 },
-      { id: 2, image: image62 },
-      { id: 3, image: image63 },
-      { id: 4, image: image64 },
-      { id: 5, image: image65 },
-      { id: 6, image: image66 },
-    ],
-  },
+  // {
+  //   id: 11,
+  //   Heading: "Piping Fabrication",
+  //   data: [
+  //     { id: 1, image: image61 },
+  //     { id: 2, image: image62 },
+  //     { id: 3, image: image63 },
+  //     { id: 4, image: image64 },
+  //     { id: 5, image: image65 },
+  //     { id: 6, image: image66 },
+  //   ],
+  // },
   {
     id: 12,
     Heading: "SS Mixing Vessle",
@@ -257,24 +275,26 @@ const FinalData = [
     Heading: "Shaft Storage Container",
     data: [
       { id: 1, image: image70 },
+      { id: 2, image: image102 },
+      { id: 3, image: image103 },
     ],
   },
-  {
-    id: 16,
-    Heading: "Turning And Drilling",
-    data: [
-      { id: 1, image: image82 },
-      { id: 2, image: image83 },
-      { id: 3, image: image84 },
-      { id: 4, image: image85 },
-      { id: 5, image: image86 },
-      { id: 6, image: image87 },
-      { id: 7, image: image88 },
-      { id: 7, image: image89 },
-      { id: 7, image: image90 },
-      { id: 7, image: image91 },
-    ],
-  },
+  // {
+  //   id: 16,
+  //   Heading: "Turning And Drilling",
+  //   data: [
+  //     { id: 1, image: image82 },
+  //     { id: 2, image: image83 },
+  //     { id: 3, image: image84 },
+  //     { id: 4, image: image85 },
+  //     { id: 5, image: image86 },
+  //     { id: 6, image: image87 },
+  //     { id: 7, image: image88 },
+  //     { id: 7, image: image89 },
+  //     { id: 7, image: image90 },
+  //     { id: 7, image: image91 },
+  //   ],
+  // },
   {
     id: 14,
     Heading: "Vessel",
@@ -298,18 +318,72 @@ const FinalData = [
       { id: 7, image: image81 },
     ],
   },
+  {
+    id: 16,
+    Heading: "PMI INSPECTION",
+    data: [
+      { id: 1, image: image111 },
+      { id: 2, image: image112 },
+      { id: 3, image: image113 },
+      // { id: 4, image: image78 },
+      // { id: 5, image: image79 },
+      // { id: 6, image: image80 },
+      // { id: 7, image: image81 },
+    ],
+  },
+  {
+    id: 16,
+    Heading: "HYDRO/PNEUMATIC INHOUSE FACILITY",
+    data: [
+      { id: 1, image: image131 },
+      { id: 2, image: image132 },
+      // { id: 3, image: image113 },
+      // { id: 4, image: image78 },
+      // { id: 5, image: image79 },
+      // { id: 6, image: image80 },
+      // { id: 7, image: image81 },
+    ],
+  },
+  {
+    id: 17,
+    Heading: "MPI TESTING",
+    data: [
+      { id: 1, image: image141 },
+      { id: 2, image: image142 },
+      { id: 3, image: image143 },
+      { id: 4, image: image144 },
+      // { id: 5, image: image79 },
+      // { id: 6, image: image80 },
+      // { id: 7, image: image81 },
+    ],
+  },
+  {
+    id: 18,
+    Heading: "LPT INSPECTION",
+    data: [
+      { id: 1, image: image121 },
+      // { id: 2, image: image112 },
+      // { id: 3, image: image113 },
+      // { id: 4, image: image78 },
+      // { id: 5, image: image79 },
+      // { id: 6, image: image80 },
+      // { id: 7, image: image81 },
+    ],
+  },
 ];
 
 
 const Products = () => {
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
 
+
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" >
       {productData.map((product) => (
         <div
           key={product.id}
@@ -322,6 +396,7 @@ const Products = () => {
               src={product.image}
               alt={product.name}
               className="w-full h-48 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+              style={{objectFit:'contain'}}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-40 group-hover:opacity-60 transition-opacity duration-300"></div>
             <div className="absolute bottom-0 left-0 p-4">

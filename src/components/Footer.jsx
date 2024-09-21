@@ -84,8 +84,9 @@ const Footer = () => {
                             Get in touch
                             </p>
                             <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                                <a className="hover:opacity-75" href>  Plot No W-7, S Block Bhosari MIDC </a>
+                                <a className="hover:opacity-75" href>  ADD: PLOT NO S-187, S BLOCK BHOSARI MIDC. </a>
                                 <a className="hover:opacity-75" href>  9561001623 (Vinod Bhandari) </a>
+                                <a className="hover:opacity-75" href>  8698115956 (Tejswini Chaudhari)</a> 
                                 <a className="hover:opacity-75" href> swarajengineering1@gmail.com </a>
                                 <Link to='/contact'><a className="hover:opacity-75" href> Contact Us</a></Link>
                                 {/* <a className="hover:opacity-75" href> Accessibility </a> */}

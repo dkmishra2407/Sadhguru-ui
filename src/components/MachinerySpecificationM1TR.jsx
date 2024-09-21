@@ -23,13 +23,13 @@ const MachinerySpecificationM1TR = () => {
           </ul>
         </div>
         <div>
-          <h2 className="text-xl font-semibold mb-2">OPERATIONS TO BE PERFORMED</h2>
+          {/* <h2 className="text-xl font-semibold mb-2">OPERATIONS TO BE PERFORMED</h2>
           <ul className="list-disc list-inside space-y-2 text-lg">
             <li data-aos="fade-right">Drilling</li>
             <li data-aos="fade-right" data-aos-delay="100">Reaming</li>
             <li data-aos="fade-right" data-aos-delay="200">Boring</li>
             <li data-aos="fade-right" data-aos-delay="300">Tapping</li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>
