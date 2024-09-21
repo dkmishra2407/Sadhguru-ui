@@ -107,7 +107,7 @@ const OurProducts = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Designed for tough industrial environments, our components are made from high-quality SA 516 GR 70 and IS 2062 E 250A steel. They offer exceptional durability, corrosion resistance, and the ability to withstand extreme pressures and temperatures. Rigorous quality checks, including heat treatment and advanced welding, ensure reliable and long-lasting performance. Ideal for critical applications, our products deliver industry-leading efficiency and reliability.
+         Designed for tough industrial environments, our components are made from high-quality IS 2062 E 250A, SA516 Gr 70, A240 / A182 TP 316L, UNS 2205 (DUPLEX STEEL), UNS 32750 / 32760 (SUPER DUPLEX STEEL, INCONEL ALLOY STEEL. They offer exceptional durability, corrosion resistance, and the ability to withstand extreme pressures and temperatures. Rigorous quality checks, including heat treatment and advanced welding, ensure reliable and long-lasting performance. Ideal for critical applications, our products deliver industry-leading efficiency and reliability.
         </p>
 
         <div className="flex justify-end gap-2 mt-4">
