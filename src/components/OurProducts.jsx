@@ -5,11 +5,11 @@ import 'aos/dist/aos.css';
 import right from '../assets/right.png';
 import left from '../assets/left.png';
 import image1 from '../assets/Images/image1.jpg'; 
-import image2 from '../assets/newaddedimage.jpg'
+import image2 from '../assets/Images/image2.jpg'; 
 const imageArray = [
   {
     title: "BAREL / CAN MANUFACTURING SIZE : 12 TO 48 MATERIAL : SA 516 GR 70, A106 GR B, A333 GR 6, SS316L, DUPLEX, SUPER DUPLEX",
-    img: 'https://ibb.co/3vnjyK4.png'
+    img: image2
   },
   {
     title: 'DISTRUBUTER CASING / DISCHAGE HEAD MATERIAL : SA 516 GR 70, SS 316L, DUPLEX, SUPER DUPLEX.',
