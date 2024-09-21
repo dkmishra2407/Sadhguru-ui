@@ -14,8 +14,8 @@ import image9 from '../assets/Images/image9.jpg';
 import image10 from '../assets/Images/image10.png';
 import image101 from '../assets/newadd1.jpg';
 const productData = [
-  { id: 1, name: 'DISTRUBUTER CASING / DISCHAGE HEAD', material: 'SA 516 GR 70, SS 316L, DUPLEX, SUPER DUPLEX.', image: image1 },
-  { id: 2, name: 'BAREL / CAN', size: '12” TO 48”', material: 'SA 516 GR 70, A106 GR B, A333 GR 6, SS316L, DUPLEX, SUPER DUPLEX', image: image101 },
+  { id: 1, name: 'Distributer Casing', material: 'SA 516 GR 70, SS 316L, DUPLEX, SUPER DUPLEX.', image: image1 },
+  { id: 2, name: 'Barrel / Can', size: '12” TO 48”', material: 'SA 516 GR 70, A106 GR B, A333 GR 6, SS316L, DUPLEX, SUPER DUPLEX', image: image101 },
   { id: 3, name: 'MOUNTING PLATE', thickness: '56MM TO 110MM', material: 'SA 516 GR 70, SS 316L, DUPLEX, SUPER DUPLEX.', image: image3 },
   { id: 5, name: 'MOTOR STOOL.', material: 'SA516 GR 70, IS 2062 E 250', image: image5 },
   { id: 6, name: 'MOTOR STOOL.', material: 'SA516 GR 70, IS 2062 E 250', image: image6 },

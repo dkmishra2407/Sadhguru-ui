@@ -8,7 +8,7 @@ import "../styles/Slider.model.css";
 import slid3 from '../assets/Team.jpg';
 import slid2 from '../assets/client1.jpg'
 import slid1 from '../assets/client2.jpg'
-
+import slid4 from '../assets/myteam2.jpg'
 function Responsive1() {
     useEffect(() => {
         AOS.init({
@@ -108,6 +108,15 @@ function Responsive1() {
                 <div className="slide">
                     <img
                         src={slid3}
+                        alt="Banner 1"
+                        className="slide-image"
+                        
+                    />
+                  
+                </div>
+                <div className="slide">
+                    <img
+                        src={slid4}
                         alt="Banner 1"
                         className="slide-image"
                         
