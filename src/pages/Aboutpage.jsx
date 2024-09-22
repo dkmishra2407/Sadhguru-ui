@@ -59,6 +59,7 @@ const AboutUs = () => {
                 <p className="text-lg mb-4">
                 Your satisfaction is our top priority. We work closely with you throughout the entire process, from initial consultation to final delivery, ensuring that your experience with us is seamless and stress-free.
                 </p>
+                <h2 className='font-semibold'>Vertical pump part manufacturer.</h2>
             </div>
             {/* <ListOfMachinery /> */}
             <QualityPolicy />
