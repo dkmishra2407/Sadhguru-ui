@@ -1,7 +1,23 @@
-
 import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+
+// Manually define the default marker icon
+import markerIconPng from 'leaflet/dist/images/marker-icon.png';
+import markerShadowPng from 'leaflet/dist/images/marker-shadow.png';
+
+// Fix the icon by setting the icon manually
+let DefaultIcon = L.icon({
+  iconUrl: markerIconPng,
+  shadowUrl: markerShadowPng,
+  iconSize: [25, 41], // size of the icon
+  iconAnchor: [12, 41], // point of the icon which will correspond to marker's location
+  popupAnchor: [1, -34], // point from which the popup should open relative to the iconAnchor
+  shadowSize: [41, 41], // size of the shadow
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
 
 const MapComponent = ({ lat, lng }) => {
   const [position, setPosition] = useState([lat || 51.505, lng || -0.09]);
