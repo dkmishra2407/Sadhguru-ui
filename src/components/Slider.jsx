@@ -5,10 +5,10 @@ import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/Slider.model.css"; 
-import slid1 from '../assets/Slider/banner_img1.jpg'
-import slid2 from '../assets/Slider/banner_img2.jpg'
-import slid3 from '../assets/Slider/banner_img3.jpg'
-import slid4 from '../assets/Slider/banner_img4.jpg'
+import slid1 from '../assets/KEPL-1-CmgRZD4B.png'
+import slid2 from '../assets/KEPL-1-CmgRZD4B.png'
+import slid3 from '../assets/KEPL-1-CmgRZD4B.png'
+import slid4 from '../assets/KEPL-1-CmgRZD4B.png'
 
 function Responsive() {
     useEffect(() => {
@@ -58,7 +58,7 @@ function Responsive() {
             <Slider {...settings}>
                 <div className="slide">
                     <img
-                        src={slid1}
+                        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1joe_bW21q6ibJh8fbsAaNDIzBYNiPsFY8sVNZxf9Hppver4UR5vEBmE6xA&s'
                         alt="Banner 1"
                         className="slide-image"
                         style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
@@ -99,7 +99,7 @@ function Responsive() {
                 </div> */}
                   <div className="slide">
                     <img
-                        src={slid2}
+                        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPFIgLsMRJkD10DplCVjnPlwPr-Tlrvm4dEqoEzMv__St_-abmrzN7bjZfsg&s'
                         alt="Banner 1"
                         className="slide-image"
                         style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
@@ -108,7 +108,7 @@ function Responsive() {
                 </div>
                 <div className="slide">
                     <img
-                        src={slid3}
+                        src= 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8oGonbc0KQSr8s7eyvcf_b8IyVL20oiOsEw7moBC8DEuByWvD1OvlYjvrCg&s'
                         alt="Banner 1"
                         className="slide-image"
                         style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
@@ -117,7 +117,7 @@ function Responsive() {
                 </div>
                 <div className="slide">
                     <img
-                        src={slid4}
+                        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReCqZLqCI8GROZhOj25QK3Bb6Il5rR7B2W-cZk17Cq8lUPLu-qAq_OzzBEww&s'
                         alt="Banner 1"
                         className="slide-image"
                         style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}

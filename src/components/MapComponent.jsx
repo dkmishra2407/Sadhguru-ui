@@ -20,7 +20,9 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 const MapComponent = ({ lat, lng }) => {
-  const [position, setPosition] = useState([lat || 51.505, lng || -0.09]);
+
+
+   const [position, setPosition] = useState([ 18.5897315,  73.9542139]);
 
   useEffect(() => {
     if (lat && lng) {
@@ -29,7 +31,7 @@ const MapComponent = ({ lat, lng }) => {
   }, [lat, lng]);
 
   const handleMarkerClick = () => {
-    const googleMapsUrl = `https://www.google.com/maps/place/18%C2%B037'54.1%22N+73%C2%B050'24.2%22E/@18.6316815,73.8374877,17z/data=!3m1!4b1!4m4!3m3!8m2!3d18.6316815!4d73.8400626?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D`;
+    const googleMapsUrl = `https://www.google.com/maps/@18.5897315,73.9542139,15z?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D`;
     window.open(googleMapsUrl, '_blank');
   };
 

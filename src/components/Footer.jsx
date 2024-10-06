@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.png'
+import logo from '../assets/sadhgurtiles.jpeg'
 import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
@@ -10,7 +10,7 @@ const Footer = () => {
                     <div>
                         <img src={logo} className="mr-5 h-6 sm:h-9" alt="logo" />
                         <p className="max-w-xs mt-4 text-sm text-gray-600">
-                            Experts in Production Planning, Quality Assurance, and NDE certified inspections.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, rerum.
                         </p>
                         <div className="flex mt-8 space-x-6 text-gray-600">
                             <a className="hover:opacity-75" href='https://www.facebook.com/profile.php?id=100070405862646&mibextid=ZbWKwL' target="_blank" rel="noreferrer">
@@ -61,13 +61,13 @@ const Footer = () => {
                             <p className="font-medium">
                                 Our speciality 
                             </p>
-                            <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                            {/* <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                                 <a className="hover:opacity-75" href='/aboutus#industrial-solutions'> Custom Fabrication</a>
                                 <a className="hover:opacity-75" href='/aboutus#industrial-solutions'> Industrial Solutions </a>
                                 <a className="hover:opacity-75" href='/aboutus'> Quality Policy </a>
                                 <a className="hover:opacity-75" href='/aboutus'> Working Experience And Working Grade </a>
                                 <a className="hover:opacity-75" href='/aboutus'> Machinery Specification </a>
-                            </nav>
+                            </nav> */}
                         </div>
                         {/* <div>
                             <p className="font-medium">
@@ -83,19 +83,19 @@ const Footer = () => {
                             <p className="font-medium">
                             Get in touch
                             </p>
-                            <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                            {/* <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                                 <a className="hover:opacity-75" href>  ADD: PLOT NO S-187, S BLOCK BHOSARI MIDC. </a>
                                 <a className="hover:opacity-75" href>  9561001623 (Vinod Bhandari) </a>
                                 <a className="hover:opacity-75" href>  8698115956 (Tejswini Chaudhari)</a> 
                                 <a className="hover:opacity-75" href> swarajengineering1@gmail.com </a>
                                 <Link to='/contact'><a className="hover:opacity-75" href> Contact Us</a></Link>
-                                {/* <a className="hover:opacity-75" href> Accessibility </a> */}
-                            </nav>
+                                {/* <a className="hover:opacity-75" href> Accessibility </a> 
+                            </nav> */}
                         </div>
                     </div>
                 </div>
                 <p className="mt-8 text-xs text-gray-800">
-                    © 2024 swarajengineering
+                    © 2024 SADHGURU TILES & MARBLES
                 </p>
             </div>
         </footer>

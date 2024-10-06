@@ -14,11 +14,11 @@ const Navigation = () => {
       <Routes>
         <Route path='/' element={<Home />} />
 
-        <Route path='/aboutus' element={<AboutUs />} />
-        <Route path='/contact' element={<ContactUs />} />
-        <Route path='/products' element={<Products />} />
-        <Route path='/career' element={<Career />} />
-        <Route path='/team' element={<Teams />} />
+        <Route path='/aboutuss' element={<AboutUs />} />
+        <Route path='/contacts' element={<ContactUs />} />
+        <Route path='/product' element={<Products />} />
+        <Route path='/careers' element={<Career />} />
+        <Route path='/teams' element={<Teams />} />
       </Routes>
     </div >
   )

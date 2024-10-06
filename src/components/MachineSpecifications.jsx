@@ -8,7 +8,7 @@ const MachineSpecifications = () => {
   }, []);
 
   return (
-    <div className="p-8   mx-auto my-10" data-aos="fade-up">
+    <div className="p-8 mx-auto my-10" data-aos="fade-up">
       <h1 className="text-3xl font-bold mb-4 text-center text-blue-600">SPECIFICATION & CAPACITY OF M/C</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
