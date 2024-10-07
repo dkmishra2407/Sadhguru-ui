@@ -1,16 +1,18 @@
 import React from 'react';
 
 const CareerComponent = () => {
+  // Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, labore? Recusandae, nihil eos. Beatae veritatis corrupti libero adipisci voluptate. Impedit.
   const jobOpenings = [
     {
-      title: "QA/QC Engineer",
+      title: "ABCD",
       location: "Pune, India",
-      description: "Responsible for quality assurance and control. Must have experience in the manufacturing industry.",
+      description: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, labore? Recusandae, nihil eos. Beatae veritatis corrupti libero adipisci voluptate. Impedit.",
+      
     },
     {
-      title: "Production & Planning Engineer",
+      title: "ABCD",
       location: "Pune, India",
-      description: "Involved in production and planning activities, ensuring efficient use of resources and meeting deadlines.",
+      description: "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, labore? Recusandae, nihil eos. Beatae veritatis corrupti libero adipisci voluptate. Impedit.",
     },
   ];
 

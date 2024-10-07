@@ -1,16 +1,11 @@
 import React, { useEffect } from 'react';
 import Responsive from '../components/Slider';
 import AboutKajaria from '../components/Aboutus';
-import OurProducts from '../components/OurProducts';
-import ListOfMachinery from '../components/ListOfMachinery';
-import OurPartners from '../components/OurParterns';
-import OurClients from './OurClients';
 import TileComponent from '../components/tiles';
 import FloorTileComponent from '../components/FloorTile';
 import FinishesComponent from '../components/Finishes';
 import MapComponent from "../components/MapComponent";
 import TrendingProducts from '../components/Trainding';
-import NewsUpdates from '../components/News';
 import DownloadCatalogue from '../components/DownloadCatelog';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -58,11 +53,7 @@ const Home = () => {
         <DownloadCatalogue />
       </div>
       
-      {/* Uncomment if needed */}
-      {/* <AboutUs /> */}
-      {/* <OurProducts /> */}
-      {/* <OurClients/> */}
-      {/* <OurPartners />  */}
+
       
       <div data-aos="fade-in">
         <AboutKajaria />

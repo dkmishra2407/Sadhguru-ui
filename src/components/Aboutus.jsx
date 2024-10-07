@@ -97,19 +97,16 @@ const AboutKajaria = () => {
         <h2 className="text-3xl font-bold mb-4" data-aos="fade-right">About SadhGuru</h2>
         
         <p className="text-gray-700 mb-4" data-aos="fade-up">
-          Kajaria, the largest manufacturer of ceramic and vitrified tiles in India. It has an annual aggregate capacity of 93.10 mn. sq. meters, distributed across nine plants - Sikandrabad in Uttar Pradesh, Gailpur & Malootana in Rajasthan, Srikalahasti in Andhra Pradesh, Balanagar in Telangana, three plants in Gujarat and one plant in Nepal. Equipped with cutting-edge technology, we strive to deliver quality products and services to our customers. Our team of experts work around the clock to ensure that the quality of our product is never compromised.
+        Sadhguru tiles is the place where you can find the sharp vision of marketing, global network and powerful backbone of quality. The company cares the vision to cater world class ceramic tiles. We believe in delivering superior quality of ceramic tiles with a sharp vision on modern technology along with modernized art work.
         </p>
         
         <p className="text-gray-700" data-aos="fade-left">
-          In order to cater to the specific needs of our customers, we produce various categories of tiles, including kitchen tiles, bathroom tiles, wall tiles, floor tiles and exterior wall tiles. We aim at producing tiles that complement the distinctive style of our customers and cater to the vast needs of Indian audience. All of our tiles are crafted with intense precision and care.
+        We introduce you to our newest range of Ceramic products that have tremendous potential to cater the global market with a competitive edge for our wall tiles buyers.
         </p>
 
-        <p className="text-gray-700" data-aos="fade-right">
-          In order to cater to the specific needs of our customers, we produce various categories of tiles, including kitchen tiles, bathroom tiles, wall tiles, floor tiles and exterior wall tiles. We aim at producing tiles that complement the distinctive style of our customers and cater to the vast needs of Indian audience. All of our tiles are crafted with intense precision and care.
+        <p className="text-gray-700" data-aos="fade-left">
+        Today, our award winning company is one of the largest retailers of its kind in pune maharastra and we offer a wide range of Wall & Floor Tiles, Bath products and Modular Kitchens.
         </p>
-        
-        {/* Uncomment if needed */}
-        {/* <button className="text-gray-1100">Know More</button> */}
       </div>
     </div>
   );
