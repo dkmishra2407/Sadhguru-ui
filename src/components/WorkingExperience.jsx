@@ -9,31 +9,33 @@ const WorkingExperience = () => {
 
   return (
     <div className="p-8   mx-auto my-10" data-aos="fade-up">
-      <h1 className="text-3xl font-bold mb-4 text-center text-blue-600">WORKING EXPERIENCE & MATERIAL GRADES</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-          <h2 className="text-xl font-semibold mb-2">Working Experience In:</h2>
-          <ul className="list-disc list-inside space-y-2 text-lg">
-            <li data-aos="fade-right">COLUMN PIPES FABRICATION</li>
-            <li data-aos="fade-right" data-aos-delay="100">BARRELS, DISTRIBUTOR CASINGS</li>
-            <li data-aos="fade-right" data-aos-delay="200">VESSELS, REACTORS & STORAGE TANKS</li>
-            <li data-aos="fade-right" data-aos-delay="300">PIPING FABRICATION</li>
-            <li data-aos="fade-right" data-aos-delay="400">MOUNTING PLATES MACHINING</li>
-          </ul>
-        </div>
-        <div>
-          <h2 className="text-xl font-semibold mb-2">Material Grades:</h2>
-          <ul className="list-disc list-inside space-y-2 text-lg">
-            <li data-aos="fade-right" data-aos-delay="500">IS2062/SA516GR70</li>
-            <li data-aos="fade-right" data-aos-delay="600">A105/A350GRLF2</li>
-            <li data-aos="fade-right" data-aos-delay="700">A106GRB/A333GR6</li>
-            <li data-aos="fade-right" data-aos-delay="800">SS304L/316L</li>
-            <li data-aos="fade-right" data-aos-delay="900">DUPLEX2205</li>
-            <li data-aos="fade-right" data-aos-delay="1000">SUPERDUPLEX32760</li>
-            <li data-aos="fade-right" data-aos-delay="1100">INCONEL</li>
-          </ul>
-        </div>
-      </div>
+      <Card sx={{ minHeight: '280px', width: 320 }}>
+      <CardCover>
+        <img
+          src="https://images.unsplash.com/photo-1542773998-9325f0a098d7?auto=format&fit=crop&w=320"
+          srcSet="https://images.unsplash.com/photo-1542773998-9325f0a098d7?auto=format&fit=crop&w=320&dpr=2 2x"
+          loading="lazy"
+          alt=""
+        />
+      </CardCover>
+      <CardCover
+        sx={{
+          background:
+            'linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)',
+        }}
+      />
+      <CardContent sx={{ justifyContent: 'flex-end' }}>
+        <Typography level="title-lg" textColor="#fff">
+          Yosemite National Park
+        </Typography>
+        <Typography
+          startDecorator={<LocationOnRoundedIcon />}
+          textColor="neutral.300"
+        >
+          California, USA
+        </Typography>
+      </CardContent>
+    </Card>
     </div>
   );
 }

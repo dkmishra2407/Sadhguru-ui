@@ -7,6 +7,7 @@ import FinishesComponent from '../components/Finishes';
 import MapComponent from "../components/MapComponent";
 import TrendingProducts from '../components/Trainding';
 import DownloadCatalogue from '../components/DownloadCatelog';
+import WallTiles from '../components/WallTiles';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -52,9 +53,7 @@ const Home = () => {
       <div data-aos="fade-up" data-aos-delay="200">
         <DownloadCatalogue />
       </div>
-      
 
-      
       <div data-aos="fade-in">
         <AboutKajaria />
       </div>

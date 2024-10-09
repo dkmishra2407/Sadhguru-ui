@@ -4,7 +4,8 @@ import logo from '../assets/sadhgurtiles.jpeg';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);  // New state for the dropdown
+    const [isDropdownOpenAbout, setIsDropdownOpenAbout] = useState(false);
+    const [isDropdownOpenProducts, setIsDropdownOpenProducts] = useState(false);
     const location = useLocation();
 
     const handleMenuToggle = () => {
@@ -15,8 +16,12 @@ const Navbar = () => {
         setIsMenuOpen(false);
     };
 
-    const handleDropdownToggle = () => {
-        setIsDropdownOpen(!isDropdownOpen);
+    const handleDropdownToggleAbout = () => {
+        setIsDropdownOpenAbout(!isDropdownOpenAbout);
+    };
+
+    const handleDropdownToggleProducts = () => {
+        setIsDropdownOpenProducts(!isDropdownOpenProducts);
     };
 
     return (
@@ -27,7 +32,6 @@ const Navbar = () => {
                     <span className="self-center text-1xl font-semibold whitespace-nowrap">SADHGURU TILES & MARBLES</span>
                 </Link>
                 <button
-                    data-collapse-toggle="navbar"
                     type="button"
                     className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                     aria-controls="navbar"
@@ -40,14 +44,11 @@ const Navbar = () => {
                     </svg>
                 </button>
                 <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar">
-                <ul className="flex flex-col font-medium mt-4 rounded-lg bg-white md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent relative z-50">
-
+                    <ul className="flex flex-col font-medium mt-4 rounded-lg bg-white md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent relative z-50">
                         <li>
                             <Link
                                 to="/"
-                                className={`block py-2 px-3 md:p-0 rounded ${
-                                    location.pathname === '/' ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700'
-                                }`}
+                                className={`py-2 px-3 md:p-0 rounded ${location.pathname === '/' ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700'}`}
                                 aria-current={location.pathname === '/' ? 'page' : undefined}
                                 onClick={handleLinkClick}
                             >
@@ -58,108 +59,76 @@ const Navbar = () => {
                         {/* About Us with Dropdown */}
                         <li className="relative">
                             <button
-                                onClick={handleDropdownToggle}
-                                className={`block py-2 px-3 md:p-0 rounded ${
-                                    location.pathname === '/aboutus'
-                                        ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700'
-                                        : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700'
-                                }`}
+                                onClick={handleDropdownToggleAbout}
+                                className={`py-2 px-3 md:p-0 rounded ${location.pathname.startsWith('/aboutus') ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700'}`}
                             >
                                 About Us
                             </button>
-
-                            {/* Dropdown Items */}
-                            {isDropdownOpen && (
+                            {isDropdownOpenAbout && (
                                 <ul className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-lg">
-                                    <li>
-                                        <Link
-                                            to="/company-info"
-                                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                                            onClick={handleLinkClick}
-                                        >
-                                            Company Information
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/chairman-message"
-                                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                                            onClick={handleLinkClick}
-                                        >
-                                            Chairman's Message
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/exports"
-                                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                                            onClick={handleLinkClick}
-                                        >
-                                            Our Exports
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/awards"
-                                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                                            onClick={handleLinkClick}
-                                        >
-                                            Awards & Certifications
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/manufacturing"
-                                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                                            onClick={handleLinkClick}
-                                        >
-                                            Manufacturing Facilities
-                                        </Link>
-                                    </li>
+                                    <li><Link to="/company-info" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Company Information</Link></li>
+                                    <li><Link to="/chairman-message" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Chairman's Message</Link></li>
+                                    <li><Link to="/exports" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Our Exports</Link></li>
+                                    <li><Link to="/awards" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Awards & Certifications</Link></li>
+                                    <li><Link to="/manufacturing" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Manufacturing Facilities</Link></li>
                                 </ul>
                             )}
                         </li>
 
-                        <li>
-                            <Link
-                                to="/products"
-                                className={`block py-2 px-3 md:p-0 rounded ${
-                                    location.pathname === '/products' ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700'
-                                }`}
-                                onClick={handleLinkClick}
+                        {/* Products with Dropdown */}
+                        <li className="relative">
+                            <button
+                                onClick={handleDropdownToggleProducts}
+                                className={`py-2 px-3 md:p-0 rounded ${location.pathname.startsWith('/products') ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700'}`}
                             >
                                 Products
-                            </Link>
+                            </button>
+                            {isDropdownOpenProducts && (
+                                <div className="absolute left-0 mt-2 w-60 bg-white border border-gray-200 shadow-lg rounded-lg">
+                                    <div className="flex flex-wrap">
+                                        <ul className="w-1/2 p-2">
+                                            <h4 className="font-semibold">Wall Tiles</h4>
+                                            <li><Link to="/wall-ceramic-tiles" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Ceramic Tiles</Link></li>
+                                            <li><Link to="/wall-full-body-vitrified" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Full Body Vitrified</Link></li>
+                                            <li><Link to="/wall-greselon" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Greselon Tiles</Link></li>
+                                            <li><Link to="/wall-plank" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Exterior Parking Tiles</Link></li>
+                                        </ul>
+                                        <ul className="w-1/2 p-2">
+                                            <h4 className="font-semibold">Floor Tiles</h4>
+                                            <li><Link to="/floor-ceramic" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Wall Ceramic / Bathroom Tiles</Link></li>
+                                            <li><Link to="/floor-full-body-vitrified" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Exterior Wall Cladding</Link></li>
+                                            <li><Link to="/floor-greselon" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>GVT Cladding</Link></li>
+                                            <li><Link to="/floor-plank" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Stone Cladding</Link></li>
+                                        </ul>
+                                        <ul className="w-full p-2">
+                                            <h4 className="font-semibold">Wall/Floor Tiles</h4>
+                                            <li><Link to="/vogue" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Vogue Collection</Link></li>
+                                        </ul>
+                                        <ul className="w-full p-2">
+                                            <h4 className="font-semibold">Platform Tiles</h4>
+                                            <li><Link to="/platform-gvt" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>GVT</Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            )}
                         </li>
+
+
                         <li>
-                            <Link
-                                to="/career"
-                                className={`block py-2 px-3 md:p-0 rounded ${
-                                    location.pathname === '/career' ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700'
-                                }`}
-                                onClick={handleLinkClick}
-                            >
+                            <Link to="/career" className={`py-2 px-3 md:p-0 rounded ${location.pathname === '/career' ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700'}`} onClick={handleLinkClick}>
                                 Career
                             </Link>
                         </li>
                         <li>
-                            <Link
-                                to="/contact"
-                                className={`block py-2 px-3 md:p-0 rounded ${
-                                    location.pathname === '/contact' ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700'
-                                }`}
-                                onClick={handleLinkClick}
-                            >
+                            <Link to="/contact" className={`py-2 px-3 md:p-0 rounded ${location.pathname === '/contact' ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700'}`} onClick={handleLinkClick}>
                                 Contact
                             </Link>
                         </li>
-                        <Link to='http://13.60.187.34:7171/'>
                         <li>
-                            <button className='text-white bg-blue-700 rounded p-1'>
-                                Log In
-                            </button>
+                            <Link to='http://13.60.187.34:7171/'>
+                                <button className='text-white bg-blue-700 rounded p-1'>Log In</button>
+                            </Link>
                         </li>
-                        </Link>
                     </ul>
                 </div>
             </div>

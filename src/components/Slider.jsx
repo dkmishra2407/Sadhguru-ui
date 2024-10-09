@@ -5,11 +5,15 @@ import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/Slider.model.css"; 
-import slid1 from '../assets/KEPL-1-CmgRZD4B.png'
-import slid2 from '../assets/KEPL-1-CmgRZD4B.png'
-import slid3 from '../assets/KEPL-1-CmgRZD4B.png'
-import slid4 from '../assets/KEPL-1-CmgRZD4B.png'
-
+import slid1 from '../assets/Slider/---a-beautifully-designed-hero-banner-showcasing-h (1).jpg/'
+import slid2 from '../assets/Slider/---a-beautifully-designed-hero-banner-showcasing-h.jpg'
+import slid3 from '../assets/Slider/---a-hero-banner-image-featuring-traditional-india.jpg'
+import slid4 from '../assets/Slider/a-hero-banner-image-featuring-european-style-tile-.jpg'
+import slid5 from '../assets/Slider/a-hero-banner-image-showcasing-luxurious-living-ro.jpg'
+import slid6 from  '../assets/Slider/a-hero-banner-image-showcasing-modern-urban-style-.jpg'
+import slid7 from  '../assets/Slider/a-hero-banner-image-showcasing-outdoor-tiles-in-a- (1).jpg'
+import slid8 from  '../assets/Slider/a-hero-banner-image-showcasing-outdoor-tiles-in-a-.jpg'
+import slid9 from '../assets/Slider/a-vibrant-hero-banner-image-featuring-an-indian-fe.jpg'
 function Responsive() {
     useEffect(() => {
         AOS.init({
@@ -58,48 +62,16 @@ function Responsive() {
             <Slider {...settings}>
                 <div className="slide">
                     <img
-                        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1joe_bW21q6ibJh8fbsAaNDIzBYNiPsFY8sVNZxf9Hppver4UR5vEBmE6xA&s'
+                        src={slid1}
                         alt="Banner 1"
                         className="slide-image"
                         style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
                     />
                   
                 </div>
-                {/* <div className="slide">
-                    <img
-                        src={slid2}
-                        alt="Banner 2"
-                        className="slide-image"
-                    />
-                    <div className="text-overlay" data-aos="fade-up">
-                        <h1>& Manufacturing</h1>
-                        <h1>Innovation in Research</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Exercitationem, optio? Aspernatur saepe magnam quo sint ea, qui
-                            repudiandae.
-                        </p>
-                    </div>
-                </div>
-                <div className="slide">
-                    <img
-                       src={slid3}
-                        alt="Banner 3"
-                        className="slide-image"
-                    />
-                    <div className="text-overlay" data-aos="fade-up">
-                        <h1>Engineering Products and</h1>
-                        <h1>Solutions</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Exercitationem, optio? Aspernatur saepe magnam quo sint ea, qui
-                            repudiandae.
-                        </p>
-                    </div>
-                </div> */}
                   <div className="slide">
                     <img
-                        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPFIgLsMRJkD10DplCVjnPlwPr-Tlrvm4dEqoEzMv__St_-abmrzN7bjZfsg&s'
+                        src={slid4}
                         alt="Banner 1"
                         className="slide-image"
                         style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
@@ -108,7 +80,7 @@ function Responsive() {
                 </div>
                 <div className="slide">
                     <img
-                        src= 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8oGonbc0KQSr8s7eyvcf_b8IyVL20oiOsEw7moBC8DEuByWvD1OvlYjvrCg&s'
+                        src={slid3}
                         alt="Banner 1"
                         className="slide-image"
                         style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
@@ -117,12 +89,53 @@ function Responsive() {
                 </div>
                 <div className="slide">
                     <img
-                        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReCqZLqCI8GROZhOj25QK3Bb6Il5rR7B2W-cZk17Cq8lUPLu-qAq_OzzBEww&s'
+                        src={slid2}
                         alt="Banner 1"
                         className="slide-image"
                         style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
                     />
-                  
+                </div>
+                <div className="slide">
+                    <img
+                        src={slid5}
+                        alt="Banner 1"
+                        className="slide-image"
+                        style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
+                    />
+                </div>
+                <div className="slide">
+                    <img
+                        src={slid6}
+                        alt="Banner 1"
+                        className="slide-image"
+                        style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
+                    />
+                </div>
+                <div className="slide">
+                    <img
+                        src={slid7}
+                        alt="Banner 1"
+                        className="slide-image"
+                        style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
+                    />
+                </div>
+
+                <div className="slide">
+                    <img
+                        src={slid8}
+                        alt="Banner 1"
+                        className="slide-image"
+                        style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
+                    />
+                </div>
+
+                <div className="slide">
+                    <img
+                        src={slid9}
+                        alt="Banner 1"
+                        className="slide-image"
+                        style={{height:'90vh',objectFit:'cover',marginTop:'1px'}}
+                    />
                 </div>
             </Slider>
         </div>
