@@ -10,6 +10,7 @@ import image4 from '../assets/Tiles Picture/Floor Tiles/Double Charge/Dbl04.jpg'
 import image5 from '../assets/Tiles Picture/Floor Tiles/Double Charge/Dbl05.jpg';
 import image6 from '../assets/Tiles Picture/Floor Tiles/Double Charge/Dbl06.jpg';
 import image7 from '../assets/Tiles Picture/Floor Tiles/Double Charge/Dbl07.jpg';
+import image8 from '../assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera01.jpg';
 //Floor Tiles -- > Floor
 
 const imageArray = [
