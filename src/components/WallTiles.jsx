@@ -5,7 +5,11 @@ import StraightenIcon from '@mui/icons-material/Straighten';
 //Floor Tiles -- > Double Charge
 import image1 from '../assets/Tiles Picture/Floor Tiles/Double Charge/Dbl01.jpg';
 import image2 from '../assets/Tiles Picture/Floor Tiles/Double Charge/Dbl02.jpg';
-import image3 from '../assets/Tiles Picture/Floor Tiles/Double Charge/Dbl03.jpg'
+import image3 from '../assets/Tiles Picture/Floor Tiles/Double Charge/Dbl03.jpg';
+import image4 from '../assets/Tiles Picture/Floor Tiles/Double Charge/Dbl04.jpg';
+import image5 from '../assets/Tiles Picture/Floor Tiles/Double Charge/Dbl05.jpg';
+import image6 from '../assets/Tiles Picture/Floor Tiles/Double Charge/Dbl06.jpg';
+import image7 from '../assets/Tiles Picture/Floor Tiles/Double Charge/Dbl07.jpg';
 //Floor Tiles -- > Floor
 
 const imageArray = [
@@ -26,11 +30,67 @@ const imageArray = [
     }
   },
   {
-    id: 2,
+    id: 3,
     data: {
       name: "Double Charge Floor Tile",
       size: "138*22",
       image: image3
+    }
+  }
+  {
+    id: 4,
+    data: {
+      name: "Double Charge Floor Tile",
+      size: "138*22",
+      image: image4
+    }
+  }
+  {
+    id: 5,
+    data: {
+      name: "Double Charge Floor Tile",
+      size: "138*22",
+      image: image5
+    }
+  }
+  {
+    id: 6,
+    data: {
+      name: "Double Charge Floor Tile",
+      size: "138*22",
+      image: image6
+    }
+  }
+  {
+    id: 7,
+    data: {
+      name: "Double Charge Floor Tile",
+      size: "138*22",
+      image: image7
+    }
+  }
+  {
+    id: 8,
+    data: {
+      name: "Double Charge Floor Tile",
+      size: "138*22",
+      image: image8
+    }
+  }
+  {
+    id: 9,
+    data: {
+      name: "Double Charge Floor Tile",
+      size: "138*22",
+      image: image9
+    }
+  }
+  {
+    id: 10,
+    data: {
+      name: "Double Charge Floor Tile",
+      size: "138*22",
+      image: image10
     }
   }
 ];
