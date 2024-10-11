@@ -47,22 +47,29 @@ import image37 from '../assets/Tiles Picture/Floor Tiles/Full Body Tiles/FullBod
 import image38 from '../assets/Tiles Picture/Floor Tiles/Full Body Tiles/FullBody_08.jpg';
 import image39 from '../assets/Tiles Picture/Floor Tiles/Full Body Tiles/FullBody_09.jpg';
 import image40 from '../assets/Tiles Picture/Floor Tiles/Full Body Tiles/FullBody_10.jpg';
-//Floor Tiles -- > Floor
-// import image9 from '../assets/Tiles Picture/Floor Tiles/Floor/FloorTile_1.jpg'
+//Floor Tiles -- > Greselin
+import image41 from '../assets/Tiles Picture/Floor Tiles/Greselin/Gres01.jpg';
+import image42 from '../assets/Tiles Picture/Floor Tiles/Greselin/Gres02.jpg';
+import image43 from '../assets/Tiles Picture/Floor Tiles/Greselin/Gres03.jpg';
+import image44 from '../assets/Tiles Picture/Floor Tiles/Greselin/Gres04.jpg';
+import image45 from '../assets/Tiles Picture/Floor Tiles/Greselin/Gres05.jpg';
+import image46 from '../assets/Tiles Picture/Floor Tiles/Greselin/Gres06.jpg';
+import image47 from '../assets/Tiles Picture/Floor Tiles/Greselin/Gres07.jpg';
+import image48 from '../assets/Tiles Picture/Floor Tiles/Greselin/Gres08.jpg';
+import image49 from '../assets/Tiles Picture/Floor Tiles/Greselin/Gres09.jpg';
+import image50 from '../assets/Tiles Picture/Floor Tiles/Greselin/Gres10.jpg';
+//Floor Tiles -- > Planks
+import image51 from '../assets/Tiles Picture/Floor Tiles/Planks/Plank_01.jpg';
+import image52 from '../assets/Tiles Picture/Floor Tiles/Planks/Plank_02.jpg';
+import image53 from '../assets/Tiles Picture/Floor Tiles/Planks/Plank_03.jpg';
+import image54 from '../assets/Tiles Picture/Floor Tiles/Planks/Plank_04.jpg';
+import image55 from '../assets/Tiles Picture/Floor Tiles/Planks/Plank_05.jpg';
+import image56 from '../assets/Tiles Picture/Floor Tiles/Planks/Plank_06.jpg';
+import image57 from '../assets/Tiles Picture/Floor Tiles/Planks/Plank_07.jpg';
+import image58 from '../assets/Tiles Picture/Floor Tiles/Planks/Plank_08.jpg';
+import image59 from '../assets/Tiles Picture/Floor Tiles/Planks/Plank_09.jpg';
+import image60 from '../assets/Tiles Picture/Floor Tiles/Planks/Plank_10.jpg';
 
-
-// import image10 from '../assets/Tiles Picture/Floor Tiles/Full Body Tiles/FullBody_01.jpg'
-
-// import image11 from '../assets/Tiles Picture/Floor Tiles/Greselin/Gres01.jpg'
-// import image12 from '../assets/Tiles Picture/Floor Tiles/Planks/Plank_01.jpg'
-
-// // wall tiles
-// import image13 from '../assets/Tiles Picture/Wall Tiles/Bathroom/Bath01.jpg'
-// import image14 from '../assets/Tiles Picture/Wall Tiles/Exterior Wall Cladding/ExWallCladding01.jpg'
-// import image15 from '../assets/Tiles Picture/Wall Tiles/GVT Cladding/GVT02.jpg'
-// import image16 from '../assets/Tiles Picture/Wall Tiles/Kitchen/Kitchen01.jpg'
-// import image17 from '../assets/Tiles Picture/Wall Tiles/Stone Cladding/Stone02.png'
-// import image18 from '../assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera01.jpg'
 const imageArray = [
   {
     id: 1,
@@ -412,6 +419,171 @@ const imageArray = [
       image: image40
     }
   },
+
+  //Floor Tile --> Greselin
+  {
+    id: 41,
+    data: {
+      name: "Greselin",
+      size: "138*22",
+      image: image41
+    }
+  },
+  {
+    id: 42,
+    data: {
+      name: "Greselin",
+      size: "138*22",
+      image: image42
+    }
+  },
+  {
+    id: 43,
+    data: {
+      name: "Greselin",
+      size: "138*22",
+      image: image43
+    }
+  },
+  {
+    id: 44,
+    data: {
+      name: "Greselin",
+      size: "138*22",
+      image: image44
+    }
+  },
+  {
+    id: 45,
+    data: {
+      name: "Greselin",
+      size: "138*22",
+      image: image45
+    }
+  },
+  {
+    id: 46,
+    data: {
+      name: "Greselin",
+      size: "138*22",
+      image: image46,
+    }
+  },
+  {
+    id: 47,
+    data: {
+      name: "Greselin",
+      size: "138*22",
+      image: image47
+    }
+  },
+  {
+    id: 48,
+    data: {
+      name: "Greselin",
+      size: "138*22",
+      image: image448,
+    }
+  },
+  {
+    id: 49,
+    data: {
+      name: "Greselin",
+      size: "138*22",
+      image: image49,
+    }
+  },
+  {
+    id: 50,
+    data: {
+      name: "Greselin",
+      size: "138*22",
+      image: image50,
+    }
+  },
+
+  //Floor Tile --> Planks
+  {
+    id: 51,
+    data: {
+      name: "Planks",
+      size: "138*22",
+      image: image51,
+    }
+  },
+  {
+    id: 52,
+    data: {
+      name: "Planks",
+      size: "138*22",
+      image: image52,
+    }
+  },
+  {
+    id: 53,
+    data: {
+      name: "Planks",
+      size: "138*22",
+      image: image53,
+    }
+  },
+  {
+    id: 54,
+    data: {
+      name: "Planks",
+      size: "138*22",
+      image: image54,
+    }
+  },
+  {
+    id: 55,
+    data: {
+      name: "Planks",
+      size: "138*22",
+      image: image55,
+    }
+  },
+  {
+    id: 56,
+    data: {
+      name: "Planks",
+      size: "138*22",
+      image: image56,
+    }
+  },
+  {
+    id: 57,
+    data: {
+      name: "Planks",
+      size: "138*22",
+      image: image57,
+    }
+  },
+  {
+    id: 58,
+    data: {
+      name: "Planks",
+      size: "138*22",
+      image: image58,
+    }
+  },
+  {
+    id: 59,
+    data: {
+      name: "Planks",
+      size: "138*22",
+      image: image59,
+    }
+  },
+  {
+    id: 60,
+    data: {
+      name: "Planks",
+      size: "138*22",
+      image: image60,
+    }
+  },
+
 
 ];
 
