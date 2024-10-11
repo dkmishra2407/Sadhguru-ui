@@ -550,7 +550,7 @@ const imageArray = [
     data: {
       name: "Greselin",
       size: "138*22",
-      image: image448,
+      image: image48,
     }
   },
   {
