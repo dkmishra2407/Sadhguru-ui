@@ -651,7 +651,6 @@ const imageArray = [
       image: image60,
     }
   },
-
 //Wall Tiles -- > Bathroom
   {
     id: 61,
