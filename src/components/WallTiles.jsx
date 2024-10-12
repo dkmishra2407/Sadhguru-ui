@@ -114,7 +114,6 @@ import image97 from '../assets/Tiles Picture/Wall Tiles/Kitchen/Kitchen07.jpg';
 import image98 from '../assets/Tiles Picture/Wall Tiles/Kitchen/Kitchen08.jpg';
 import image99 from '../assets/Tiles Picture/Wall Tiles/Kitchen/Kitchen09.jpg';
 import image100 from '../assets/Tiles Picture/Wall Tiles/Kitchen/Kitchen10.jpg';
-import image99 from '../assets/Tiles Picture/Wall Tiles/Kitchen/Kitchen09.jpg';
 //Wall Tiles -- > Stone Cladding
 import image101 from '../assets/Tiles Picture/Wall Tiles/Stone Cladding/Stone01.png';
 import image102 from '../assets/Tiles Picture/Wall Tiles/Stone Cladding/Stone02.png';
@@ -127,16 +126,16 @@ import image108 from '../assets/Tiles Picture/Wall Tiles/Stone Cladding/Stone08.
 import image109 from '../assets/Tiles Picture/Wall Tiles/Stone Cladding/Stone09.png';
 import image110 from '../assets/Tiles Picture/Wall Tiles/Stone Cladding/Stone10.png';
 //Wall Tiles -- > Wall ceramic
-import image111 from '..src/assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera01.jpg';
-import image112 from '..src/assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera02.jpg';
-import image113 from '..src/assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera03.jpg';
-import image114 from '..src/assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera04.jpg';
-import image115 from '..src/assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera05.jpg';
-import image116 from '..src/assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera06.jpg';
-import image117 from '..src/assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera07.jpg';
-import image118 from '..src/assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera08.jpg';
-import image119 from '..src/assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera09.jpg';
-import image120 from '..src/assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera10.jpg';
+import image111 from '../assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera01.jpg';
+import image112 from '../assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera02.jpg';
+import image113 from '../assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera03.jpg';
+import image114 from '../assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera04.jpg';
+import image115 from '../assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera05.jpg';
+import image116 from '../assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera06.jpg';
+import image117 from '../assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera07.jpg';
+import image118 from '../assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera08.jpg';
+import image119 from '../assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera09.jpg';
+import image120 from '../assets/Tiles Picture/Wall Tiles/Wall Ceramic/WallCera10.jpg';
 
 const imageArray = [
   {
