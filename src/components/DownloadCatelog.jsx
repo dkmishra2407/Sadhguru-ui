@@ -1,6 +1,12 @@
 import React from 'react';
+import pdf1 from '../assets/I2K221272DEVANSH_MISHRA_7SEPT.pdf';
 
 const DownloadCatalogue = () => {
+  const handleDownload = () => {
+    // Open the PDF in a new tab
+    window.open(pdf1, '_blank');
+  };
+
   return (
     <section className="bg-black text-white pt-16">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center">
@@ -13,7 +19,10 @@ const DownloadCatalogue = () => {
         {/* Right Section */}
         <div className="mt-8 lg:mt-0">
           <p className="mb-4">If you'd like to view our latest product catalogue you can download it here.</p>
-          <button className="bg-white text-black font-bold py-3 px-6 rounded-md hover:bg-gray-300 transition">
+          <button 
+            onClick={handleDownload}
+            className="bg-white text-black font-bold py-3 px-6 rounded-md hover:bg-gray-300 transition"
+          >
             DOWNLOAD CATALOGUE
           </button>
         </div>
