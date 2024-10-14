@@ -6,7 +6,9 @@ import Home from '../pages/Home'
 import AboutUs from '../pages/Aboutpage'
 import ContactUs from '../pages/Contact'
 import Products from '../pages/Products'
-import Career from '../pages/Career'
+import Career from '../pages/Career';
+import Gallery from '../pages/gallery';
+
 const Navigation = () => {
   return (
     <div className='content'>
@@ -16,6 +18,7 @@ const Navigation = () => {
         <Route path='/aboutus' element={<AboutUs />} />
         <Route path='/product' element={<Products />} />
         <Route path='/career' element={<Career />} />
+        <Route path='/gallery' element={<Gallery />} />
       </Routes>
     </div >
   )

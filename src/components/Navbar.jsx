@@ -1,25 +1,28 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import logo from '../assets/sadhgurtiles.jpeg';
 import { Link, useNavigate } from 'react-router-dom';
 import { scroller } from 'react-scroll';
+
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDropdownOpenAbout, setIsDropdownOpenAbout] = useState(false);
     const [isDropdownOpenProducts, setIsDropdownOpenProducts] = useState(false);
     const location = useLocation();
-
     const navigate = useNavigate();
+    
+    const dropdownAboutRef = useRef(null);
+    const dropdownProductsRef = useRef(null);
 
     const handleSmoothScroll = (to, id) => {
-        navigate(to); // Navigate to the page
+        navigate(to);
         setTimeout(() => {
             scroller.scrollTo(id, {
                 duration: 500,
                 delay: 0,
                 smooth: 'easeInOutQuart',
             });
-        }, 100); // A slight delay to ensure the page loads before scrolling
+        }, 100);
     };
 
     const handleMenuToggle = () => {
@@ -37,6 +40,29 @@ const Navbar = () => {
     const handleDropdownToggleProducts = () => {
         setIsDropdownOpenProducts(!isDropdownOpenProducts);
     };
+
+    const closeDropdowns = () => {
+        setIsDropdownOpenAbout(false);
+        setIsDropdownOpenProducts(false);
+    };
+
+    const handleClickOutside = (event) => {
+        if (
+            dropdownAboutRef.current && 
+            !dropdownAboutRef.current.contains(event.target) &&
+            dropdownProductsRef.current &&
+            !dropdownProductsRef.current.contains(event.target)
+        ) {
+            closeDropdowns();
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
         <nav className="border-gray-200 bg-white shadow-lg">
@@ -71,26 +97,26 @@ const Navbar = () => {
                         </li>
 
                         {/* About Us with Dropdown */}
-                        <li className="relative">
+                        <li className="relative" ref={dropdownAboutRef}>
                             <button
                                 onClick={handleDropdownToggleAbout}
                                 className={`py-2 px-3 md:p-0 rounded ${location.pathname.startsWith('/aboutus') ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700'}`}
                             >
                                 About Us
                             </button>
-                            {isDropdownOpenAbout && (
+                            {/* {isDropdownOpenAbout && (
                                 <ul className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-lg">
-                                    <li><Link to="/company-info" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Company Information</Link></li>
-                                    <li><Link to="/chairman-message" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Chairman's Message</Link></li>
-                                    <li><Link to="/exports" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Our Exports</Link></li>
-                                    <li><Link to="/awards" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Awards & Certifications</Link></li>
-                                    <li><Link to="/manufacturing" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={handleLinkClick}>Manufacturing Facilities</Link></li>
+                                    <li><Link to="/company-info" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Company Information</Link></li>
+                                    <li><Link to="/chairman-message" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Chairman's Message</Link></li>
+                                    <li><Link to="/exports" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Our Exports</Link></li>
+                                    <li><Link to="/awards" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Awards & Certifications</Link></li>
+                                    <li><Link to="/manufacturing" className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={closeDropdowns}>Manufacturing Facilities</Link></li>
                                 </ul>
-                            )}
+                            )} */}
                         </li>
 
                         {/* Products with Dropdown */}
-                        <li className="relative">
+                        <li className="relative" ref={dropdownProductsRef}>
                             <Link to='/product'>
                             <button
                                 onClick={handleDropdownToggleProducts}
@@ -98,147 +124,129 @@ const Navbar = () => {
                             >
                                 Products
                             </button></Link>
-                            {(
-        isDropdownOpenProducts && (
-            <div className="absolute left-0 mt-2 w-60 bg-white border border-gray-200 shadow-lg rounded-lg">
-              <div className="flex flex-wrap">
-                <ul className="w-1/2 p-2">
-                  <h4 className="font-semibold">Wall Tiles</h4>
-                  <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#wall-ceramic-tiles', 'section-ceramic')}
-                    >
-                      Ceramic Tiles
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#wall-greselon', 'section-gvt')}
-                    >
-                      GVT Cladding
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#wall-stone', 'section-stone')}
-                    >
-                      Stone Cladding
-                    </div>
-                  </li>
-                  {/* <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#wall-full-body-vitrified', 'section-full-body')}
-                    >
-                      Full Body Vitrified
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#wall-greselon', 'section-greselon')}
-                    >
-                      Greselon Tiles
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#wall-exterior', 'section-exterior')}
-                    >
-                      Exterior Parking Tiles
-                    </div>
-                  </li> */}
-                </ul>
-          
-                <ul className="w-1/2 p-2">
-                  <h4 className="font-semibold">Floor Tiles</h4>
-                  <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#floor-ceramic', 'section-floor-ceramic')}
-                    >
-                      Floor Ceramic Tiles
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#floor-full-body-vitrified', 'section-exterior-wall')}
-                    >
-                      Full Body Vitrified
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#floor-plank', 'section-exterior-wall')}
-                    >
-                      Planks
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#floor-Double-Charge-Tiles', 'section-exterior-wall')}
-                    >
-                      Double Charge Tiles
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#exterior-parking-tiles', 'section-exterior-wall')}
-                    >
-                      Exterior Parking Tiles
-                    </div>
-                  </li>
-                </ul>
-          
-                <ul className="w-full p-2">
-                  <h4 className="font-semibold">Wall/Floor Tiles</h4>
-                  <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#vogue', 'section-vogue')}
-                    >
-                      Vogue Collection
-                    </div>
-                  </li>
-                </ul>
-          
-                <ul className="w-full p-2">
-                  <h4 className="font-semibold">Platform Tiles</h4>
-                  <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#platform-full-body-tiles', 'section-platform')}
-                    >
-                     Full Body Tiles
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
-                      onClick={() => handleSmoothScroll('#gvt-platform-tiles', 'section-platform')}
-                    >
-                      GVT Platform Tiles
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        )
-    )}
+                            {isDropdownOpenProducts && (
+                                <div className="absolute left-0 mt-2 w-60 bg-white border border-gray-200 shadow-lg rounded-lg">
+                                    {/* Dropdown Content */}
+                                    <div className="flex flex-wrap">
+                                        {/* Wall Tiles */}
+                                        <ul className="w-1/2 p-2">
+                                            <h4 className="font-semibold">Wall Tiles</h4>
+                                            <li>
+                                                <div
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
+                                                    onClick={() => handleSmoothScroll('#wall-ceramic-tiles', 'section-ceramic')}
+                                                >
+                                                    Ceramic Tiles
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
+                                                    onClick={() => handleSmoothScroll('#wall-greselon', 'section-gvt')}
+                                                >
+                                                    GVT Cladding
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
+                                                    onClick={() => handleSmoothScroll('#wall-stone', 'section-stone')}
+                                                >
+                                                    Stone Cladding
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        
+                                        {/* Floor Tiles */}
+                                        <ul className="w-1/2 p-2">
+                                            <h4 className="font-semibold">Floor Tiles</h4>
+                                            <li>
+                                                <div
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
+                                                    onClick={() => handleSmoothScroll('#floor-ceramic', 'section-floor-ceramic')}
+                                                >
+                                                    Floor Ceramic Tiles
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
+                                                    onClick={() => handleSmoothScroll('#floor-full-body-vitrified', 'section-exterior-wall')}
+                                                >
+                                                    Full Body Vitrified
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
+                                                    onClick={() => handleSmoothScroll('#floor-plank', 'section-exterior-wall')}
+                                                >
+                                                    Planks
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
+                                                    onClick={() => handleSmoothScroll('#floor-Double-Charge-Tiles', 'section-exterior-wall')}
+                                                >
+                                                    Double Charge Tiles
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
+                                                    onClick={() => handleSmoothScroll('#exterior-parking-tiles', 'section-exterior-wall')}
+                                                >
+                                                    Exterior Parking Tiles
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        
+                                        {/* Other Categories */}
+                                        <ul className="w-full p-2">
+                                            <h4 className="font-semibold">Wall/Floor Tiles</h4>
+                                            <li>
+                                                <div
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
+                                                    onClick={() => handleSmoothScroll('#vogue', 'section-vogue')}
+                                                >
+                                                    Vogue Collection
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        
+                                        <ul className="w-full p-2">
+                                            <h4 className="font-semibold">Platform Tiles</h4>
+                                            <li>
+                                                <div
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
+                                                    onClick={() => handleSmoothScroll('#platform-full-body-tiles', 'section-platform')}
+                                                >
+                                                    Full Body Tiles
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
+                                                    onClick={() => handleSmoothScroll('#gvt-platform-tiles', 'section-platform')}
+                                                >
+                                                    GVT Platform Tiles
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            )}
                         </li>
-
 
                         <li>
                             <Link to="/career" className={`py-2 px-3 md:p-0 rounded ${location.pathname === '/career' ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700'}`} onClick={handleLinkClick}>
                                 Career
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/gallery" className={`py-2 px-3 md:p-0 rounded ${location.pathname === '/career' ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700' : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700'}`} onClick={handleLinkClick}>
+                                Gallery
                             </Link>
                         </li>
                         <li>
@@ -259,4 +267,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 

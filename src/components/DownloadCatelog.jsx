@@ -3,7 +3,6 @@ import pdf1 from '../assets/I2K221272DEVANSH_MISHRA_7SEPT.pdf';
 
 const DownloadCatalogue = () => {
   const handleDownload = () => {
-    // Open the PDF in a new tab
     window.open(pdf1, '_blank');
   };
 
